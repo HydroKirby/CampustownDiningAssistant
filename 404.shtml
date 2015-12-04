@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="favicon.png" type="image/x-icon"/>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<link href="/style/style.css" rel="stylesheet" type="text/css" />
+	<title>UIUC Campustown Dining Assistant - About</title>
+</head>
+<body>
+<h1>UIUC Campustown Dining Assistant - About</h1>
+
+<ul id="navbar">
+<li><a href="http://campusdining.web.engr.illinois.edu/">Homepage</a></li>
+<li><a href="http://campusdining.web.engr.illinois.edu/about/">About</a></li>
+</ul>
+
+<p><b>404: Page not found.</b></p>
+<li><a href="http://campusdining.web.engr.illinois.edu/">Return to Home</a></li>
+
+<p></p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+	/**
+	 * Background is "Sprinkles" by Rebecca Litt on Subtle Patterns.
+	 * www.subtlepatterns.com
+	 * http://yellowmangodesign.com/
+	 */
+	background-image: url("sprinkles.png");
+	
+}
+
+ul#navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+
+ul#navbar > li {
+        display: inline;
+}
+
+/* This is for dropdown list of results */
+#keyword {
+	width: 200px;
+	font-size: 1em;
+}
+
+#results {
+	width: 204px;
+	position: absolute;
+	border: 1px solid #c0c0c0;
+	background-color: #ffffff;
+	display: none;
+	margin-left: 62px;
+}
+
+#results .item {
+	padding: 3px;
+	font-family: Helvetica;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#results .item:last-child {
+	border-bottom: 0px;
+}
+
+#results .item:hover {
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+
+/* For tag cloud's variably sized text. */
+.smallTag { font-size: 11px; }
+.mediumTag { font-size: 16px; }
+.largeTag { font-size: 24px; }
+div#divTagC { padding-top: 1em; width: 400px; }
+#divTagC > span { padding: 2px; }
