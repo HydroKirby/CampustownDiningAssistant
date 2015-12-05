@@ -13,7 +13,7 @@ db_user = 'campusdi_rests'
 db_pass = 'rests'
 db_name = 'campusdi_rests'
 db_loc = 'localhost'
-yelp_logo_path = 'img/yelp_logo_40x20.png'
+yelp_logo_path = '/img/yelp_logo_40x20.png'
 
 def dprint(text):
     """Print debug text."""

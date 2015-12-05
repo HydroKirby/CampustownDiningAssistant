@@ -47,7 +47,7 @@ value="<?php echo htmlspecialchars($_POST['search']) ?>" id="keyword">
 // Run a search on our DB from the contents of the search box.
 $query = htmlspecialchars($_POST["search"]);
 if (!empty($query)) {
-    $query = addslashes($query);
+    $query = escapeshellcmd(addslashes($query));
     $username = $_SESSION['username'];
     if (!empty($username)) {
         $python = `python cgi-bin/runner.py query -u $query -n $username`;
@@ -58,9 +58,9 @@ if (!empty($query)) {
     echo $python;
 } else {
     // Visit the restaurant clicked on by the user after a search.
-    $query = htmlspecialchars($_POST["visit"]);
+    $query = escapeshellcmd(htmlspecialchars($_POST["visit"]));
     if (!empty($query)) {
-        $restid = htmlspecialchars($_POST["restid"]);
+        $restid = escapeshellcmd(htmlspecialchars($_POST["restid"]));
         $username = $_SESSION['username'];
         $python = `python cgi-bin/runner.py visit -v $username $restid`;
         $python = `$python`;

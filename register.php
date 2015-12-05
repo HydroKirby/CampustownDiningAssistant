@@ -19,12 +19,11 @@ require('cgi-bin/navbar.php');
 
 	<form action="register.php" method="POST">
 	Username: <input type="text" name="username">
-	<br  />Password: <input type="password" name="password">	
-	<br  />Confirm Password: <input type="password" name="repassword">		
-	<br  />Email: <input type="text" name="email">		
-	<br  /><input type="submit" name="submit" value="Register"> or <a href="/login.php">Login</a>
+	<br>Password: <input type="password" name="password">	
+	<br>Confirm Password: <input type="password" name="repassword">		
+	<br>Email: <input type="text" name="email">		
+	<br><input type="submit" name="submit" value="Register"> or <a href="/login.php">Login</a>
 	</form>
-</body>
 
 <?php
 require('connect.php');
@@ -34,21 +33,31 @@ $repass = $_POST['repassword'];
 $email = $_POST['email'];
 
 if(isset($_POST['submit'])){
+	// Sanitize the inputs.
+	if (!empty($username))
+		$username = escapeshellcmd(htmlspecialchars($username));
+	if (!empty($password))
+		$password = escapeshellcmd(htmlspecialchars($password));
+	if (!empty($repass))
+		$repass = escapeshellcmd(htmlspecialchars($repass));
+	if (!empty($email))
+		$email = escapeshellcmd(htmlspecialchars($email));
 
 	if (!empty($username) && !empty($password) && !empty($repass) && !empty($email)) {
 		if ($password != $repass) {
-			echo "Please re-enter your correct password.";
-		}elseif($query = mysqli_query($connect, "INSERT INTO users (name, pass, email) VALUES('".$username."', '".$password."', '".$email."')"))
+			echo "The passwords do not match.";
+		}elseif($query = mysqli_query($connect,
+			"INSERT INTO users (name, pass, email) VALUES('".$username."', '".$password."', '".$email."')"))
 		{
 			echo "Success";
 		
 		}else{
-			echo "The username is already registered!";
+			echo "Error: This username is already registered.";
 		}
 	}else{
 		echo "Please fill in all the fields.";
 	}
-	
 }
 ?>
+</body>
 </html>

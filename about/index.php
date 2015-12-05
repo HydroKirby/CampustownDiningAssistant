@@ -28,19 +28,14 @@ the Champaign-Urbana area. As such, its interface is more streamlined compared t
 <p>The first advanced search feature is weighted searching. Campus Dining Assistant retains a history of restaurants that the user has visited. As long as they are logged in, search results on tags will be weighted and sorted to resemble restaurants that the user had visited in the past. For example, searching for "dinner" looks for all restaurants in the database and subsequently weights those results more strongly if the user had visited restaurants with similar tags to it in the past.</p>
 <p>The second advanced feature is autocompletion in the search box. As you begin to type in the search box, suggestions will appear from the tags in the database and from a dictionary of words.</p>
 
-<h2>Creators</h2>
-<ul>
-<li>Larry Resnik (lsresni2)</li>
-<li>Alice (Hung-Yu) Chen (hchen136)</li>
-<li>Richard Shen (rnshen2)</li>
-<li>Victor Rocha (varocha2)</i>
-</ul>
-
 <h2>Original Project Links</h2>
 <ul>
 <li><a href="https://wiki.cites.illinois.edu/wiki/display/cs411fa15/Overview">CS 411 Database Systems Fall 2015 Homepage</a></li>
 <li><a href="https://wiki.cites.illinois.edu/wiki/display/cs411fa15/Project+Track+1">Project Requirements</a></li>
 <li><a href="https://wiki.cites.illinois.edu/wiki/display/cs411fa15/Team+Zer0+Project+Description">Original Project Description</a></li>
+<li><a href="https://github.com/HydroKirby/CampustownDiningAssistant">Source Code on GitHub</a></li>
+<li><a href="https://youtu.be/mqkuCsWSKZs">Presentation Video</a></li>
+<li><a href="http://www.mediafire.com/view/8sa964dat1m5qil/Team_Zer0_CS_411_Final_Report.pdf">Final Report</a></li>
 </ul>
 
 <h2>References and Sources</h2>
@@ -50,9 +45,20 @@ the Champaign-Urbana area. As such, its interface is more streamlined compared t
 <li>Making the default value of a date field in MySQL be the current date. <a href="http://stackoverflow.com/a/1552804">Stack Overflow</a>.</li>
 <li>Making the tag cloud was referenced from <a href="http://www.peachpit.com/guides/content.aspx?g=webdesign&seqNum=302">Mariz Jordan's Web Design Reference Guide</a>.</li>
 <li>The base code for our login system was referenced from <a href="https://www.youtube.com/watch?v=nxV3nMLg0gg">Giannis Marinakis' PHP Forum web video series</a>.</li>
-<li>The basis for our autocomplete advanced feature comes from <a href="http://markonphp.com/autocomplete-php-jquery-mysql-part1/">this tutorial</a>.</li>
-<li>The food dictionary words for our autocomplet advanced feature come from <a href="http://www.enchantedlearning.com/wordlist/food.shtml">Food and Eating Vocabulary Word List</a>.</li>
+<li>The basis for our autocomplete advanced feature comes from <a href="http://markonphp.com/autocomplete-php-jquery-mysql-part1/">Autocomplete with PHP, JQuery and MySQL</a>.</li>
+<li>The food dictionary words for autocompletion come from <a href="http://www.enchantedlearning.com/wordlist/food.shtml">Food and Eating Vocabulary Word List</a>.</li>
 </ul>
+
+<h2>Creators</h2>
+<ul>
+<li>Larry Resnik (lsresni2)</li>
+<li>Alice (Hung-Yu) Chen (hchen136)</li>
+<li>Richard Shen (rnshen2)</li>
+<li>Victor Rocha (varocha2)</i>
+</ul>
+
+<p>Collectively, we are Team Zer0.</p>
+<div><img src="/img/teamzer0.jpg" alt="group picture"></div>
 
 <p>This project was finalized in December 2015.</p>
 </body>
